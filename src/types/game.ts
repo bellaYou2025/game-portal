@@ -19,4 +19,5 @@ export type GameCategory =
   | 'sports'
   | 'racing'
   | 'adventure'
+  | 'arcade'
   | 'all';

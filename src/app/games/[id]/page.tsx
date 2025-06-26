@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { sampleGames } from '@/lib/sample-data';
+import { sampleGames } from '@/data/games';
 import FullscreenButton from '@/components/FullscreenButton';
 
 type Props = {
@@ -15,9 +15,7 @@ type GenerateMetadataProps = {
 export async function generateMetadata({
   params,
 }: GenerateMetadataProps): Promise<Metadata> {
-  // 确保在使用params.id之前等待它
-  const id = await params.id;
-  const game = sampleGames.find((g) => g.id === id);
+  const game = sampleGames.find((g) => g.id === params.id);
 
   if (!game) {
     return {
@@ -37,10 +35,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function GamePage({ params }: Props) {
-  // 确保在使用params.id之前等待它
-  const id = await params.id;
-  const game = sampleGames.find((g) => g.id === id);
+export default function GamePage({ params }: Props) {
+  const game = sampleGames.find((g) => g.id === params.id);
 
   if (!game) {
     notFound();

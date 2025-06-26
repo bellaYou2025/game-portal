@@ -63,7 +63,7 @@ export const sampleGames: Game[] = [
     description:
       'Embark on a thrilling vampire hunting adventure! As a skilled hunter, use your X-ray vision machine to identify bloodsuckers hiding among ordinary people. Each level brings new challenges as vampires become more cunning in their disguises. With special exterminator kits and detectors, your mission is to save the city from a vampire uprising.',
     thumbnailUrl: 'https://placehold.co/600x400/png',
-    gameUrl: 'https://itch.io/embed-upload/8661729?color=333333',
+    gameUrl: 'https://play.famobi.com/tower-fall',
     category: 'action',
     tags: ['action', 'vampire', 'hunting', 'strategy'],
     rating: 4.8,
@@ -77,7 +77,7 @@ export const sampleGames: Game[] = [
     description:
       'Race through dark, gothic streets in this unique vampire-themed racing game. Choose from a collection of supernatural vehicles, each with its own dark powers. Challenge other vampires in high-speed pursuits through misty Victorian cities and haunted highways. Can you become the fastest vampire in the night?',
     thumbnailUrl: 'https://placehold.co/600x400/png',
-    gameUrl: 'https://games.construct.net/937/latest',
+    gameUrl: 'https://play.famobi.com/speed-master',
     category: 'racing',
     tags: ['racing', 'vampire', 'night', 'speed'],
     rating: 4.6,

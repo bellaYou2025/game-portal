@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { ThemeProvider } from "@/hooks/useTheme";
-import { ThemeToggle } from "@/components/ThemeToggle";
+// import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,7 +31,7 @@ export default function RootLayout({
                     </Link>
                   </div>
                   <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <Link href="/" className="inline-flex items-center px-1 pt-1 text-gray-900 dark:text-white">
+                    {/* <Link href="/" className="inline-flex items-center px-1 pt-1 text-gray-900 dark:text-white">
                       Home
                     </Link>
                     <Link href="/categories" className="inline-flex items-center px-1 pt-1 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
@@ -39,11 +39,11 @@ export default function RootLayout({
                     </Link>
                     <Link href="/popular" className="inline-flex items-center px-1 pt-1 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                       Popular
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <ThemeToggle />
+                  {/* <ThemeToggle /> */}
                 </div>
               </div>
             </nav>
@@ -52,7 +52,7 @@ export default function RootLayout({
           <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
             <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
               <p className="text-center text-gray-500 dark:text-gray-400">
-                © 2024 Game Portal. All rights reserved.
+                © 2025 Game Portal. All rights reserved.
               </p>
             </div>
           </footer>

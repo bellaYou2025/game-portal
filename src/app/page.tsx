@@ -1,7 +1,16 @@
 import { GameGrid } from '@/components/GameGrid';
-import { sampleGames } from '@/lib/sample-data';
+import { FeaturedGame } from '@/components/FeaturedGame';
+import { sampleGames } from '@/data/games';
 
 export default function Home() {
+  // 获取 Speed Master 游戏作为特色游戏
+  const featuredGame = sampleGames.find(
+    (game) => game.title === 'Speed Master'
+  );
+  const otherGames = sampleGames.filter(
+    (game) => game.title !== 'Speed Master'
+  );
+
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -14,7 +23,20 @@ export default function Home() {
           </p>
         </div>
 
-        <GameGrid games={sampleGames} />
+        {/* Featured Game Section */}
+        {featuredGame && (
+          <div className="mb-16">
+            <FeaturedGame game={featuredGame} />
+          </div>
+        )}
+
+        {/* Other Games Grid */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+            More Games to Explore
+          </h2>
+          <GameGrid games={otherGames} />
+        </div>
       </section>
     </main>
   );

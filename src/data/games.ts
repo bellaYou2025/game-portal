@@ -1,42 +1,40 @@
-export interface Game {
-  id: string;
-  title: string;
-  description: string;
-  url: string;
-  thumbnailUrl: string;
-  category: string;
-  tags: string[];
-}
+import { Game } from '@/types/game';
 
 export const sampleGames: Game[] = [
   {
     id: '1',
-    title: 'Minecraft Classic',
+    title: 'Heroes Assemble',
     description:
-      'Experience the original Minecraft game that started it all, right in your browser.',
-    url: 'https://classic.minecraft.net',
-    thumbnailUrl: '/games/minecraft.jpg',
-    category: 'sandbox',
-    tags: ['sandbox', 'multiplayer', 'classic'],
+      'Join the epic battle in Heroes Assemble! Team up with legendary heroes in this action-packed fighting game. Master unique abilities, execute powerful combos, and compete in thrilling multiplayer battles. Perfect for fans of superhero action and strategic combat.',
+    gameUrl: 'https://www.crazygames.com/embed/heroes-assemble',
+    thumbnailUrl: '/games/heroes-assemble.jpg',
+    category: 'action',
+    tags: ['action', 'fighting', 'multiplayer', 'superhero'],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
   },
   {
     id: '2',
-    title: '2048',
+    title: 'Tower Fall',
     description:
-      'Join the numbers and get to the 2048 tile! A simple yet addictive puzzle game.',
-    url: 'https://play2048.co',
-    thumbnailUrl: '/games/2048.jpg',
-    category: 'puzzle',
-    tags: ['puzzle', 'numbers', 'strategy'],
+      'Test your precision and timing in Tower Fall! In this challenging arcade game, navigate through increasingly difficult levels as you master the art of perfect timing. Drop blocks to create the tallest tower possible, but be careful - one wrong move and it all comes tumbling down!',
+    gameUrl: 'https://play.famobi.com/tower-fall',
+    thumbnailUrl: '/games/tower-fall.jpg',
+    category: 'arcade',
+    tags: ['arcade', 'skill', 'precision', 'casual'],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
   },
   {
-    id: '3',
-    title: 'Tetris',
+    id: '4',
+    title: 'Speed Master',
     description:
-      'The classic tile-matching puzzle game. Arrange the falling blocks to create complete lines.',
-    url: 'https://tetris.com/play-tetris',
-    thumbnailUrl: '/games/tetris.jpg',
-    category: 'puzzle',
-    tags: ['puzzle', 'classic', 'arcade'],
+      'Speed Master is an exhilarating arcade-style game that puts your reflexes and hand-eye coordination to the ultimate test. Race against time through increasingly challenging levels where split-second decisions make the difference between victory and defeat.',
+    gameUrl: 'https://play.famobi.com/speed-master',
+    thumbnailUrl: '/games/speed-master.jpg',
+    category: 'arcade',
+    tags: ['arcade', 'reaction', 'skill', 'fast-paced', 'html5'],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
   },
 ];

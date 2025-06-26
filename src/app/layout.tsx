@@ -8,8 +8,47 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Game Portal - Play Free Online Games",
-  description: "Discover and play the best free online games. New games added daily!",
+  title: {
+    template: '%s | GamePortal',
+    default: 'GamePortal - Play Free Online Games',
+  },
+  description: 'Discover and play the best free online games. New games added daily with instant play, no downloads required.',
+  keywords: ['online games', 'free games', 'browser games', 'HTML5 games', 'web games', 'no download games'],
+  authors: [{ name: 'GamePortal Team' }],
+  category: 'Gaming',
+  openGraph: {
+    title: 'GamePortal - Play Free Online Games',
+    description: 'Discover and play the best free online games. New games added daily with instant play, no downloads required.',
+    url: 'https://your-domain.com',
+    siteName: 'GamePortal',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'GamePortal - Your Ultimate Gaming Destination',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  alternates: {
+    canonical: 'https://your-domain.com',
+  },
 };
 
 export default function RootLayout({

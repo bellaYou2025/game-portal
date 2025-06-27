@@ -4,6 +4,7 @@ import Link from "next/link";
 import ThemeProvider from "@/components/ThemeProvider";
 // import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -97,6 +98,7 @@ export default function RootLayout({
             </div>
           </footer>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

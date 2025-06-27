@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GamePortal - Play Free Online Games',
     description: 'Discover and play the best free online games. New games added daily with instant play, no downloads required.',
-    url: 'https://your-domain.com',
+    url: 'https://Vampire.it.com',
     siteName: 'GamePortal',
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://your-domain.com',
+    canonical: 'https://Vampire.it.com',
   },
 };
 

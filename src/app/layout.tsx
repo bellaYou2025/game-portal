@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { ThemeProvider } from "@/hooks/useTheme";
+import ThemeProvider from "@/components/ThemeProvider";
 // import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://Vampire.it.com'),
   title: {
     template: '%s | GamePortal',
     default: 'GamePortal - Play Free Online Games',

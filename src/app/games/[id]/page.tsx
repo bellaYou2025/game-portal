@@ -4,17 +4,11 @@ import { notFound } from 'next/navigation';
 import { sampleGames } from '@/data/games';
 import FullscreenButton from '@/components/FullscreenButton';
 
-type Props = {
-  params: { id: string };
-};
-
-type GenerateMetadataProps = {
-  params: { id: string };
-};
-
 export async function generateMetadata({
   params,
-}: GenerateMetadataProps): Promise<Metadata> {
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
   const game = sampleGames.find((g) => g.id === params.id);
 
   if (!game) {
@@ -35,7 +29,7 @@ export async function generateMetadata({
   };
 }
 
-export default function GamePage({ params }: Props) {
+export default function GamePage({ params }: { params: { id: string } }) {
   const game = sampleGames.find((g) => g.id === params.id);
 
   if (!game) {

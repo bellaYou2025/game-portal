@@ -1,7 +1,7 @@
 'use client';
 
 import ThemeProvider from '@/components/ThemeProvider';
-import ThemeToggle from '@/components/ThemeToggle';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import Link from 'next/link';
 
 interface ClientLayoutProps {

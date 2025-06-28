@@ -7,9 +7,9 @@ export default function Home() {
   const featuredGame = sampleGames.find(
     (game) => game.title === 'Heroes Assemble'
   );
-  // const otherGames = sampleGames.filter(
-  //   (game) => game.title !== 'Heroes Assemble'
-  // );
+  const otherGames = sampleGames.filter(
+    (game) => game.title !== 'Heroes Assemble'
+  );
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -31,12 +31,12 @@ export default function Home() {
         )}
 
         {/* Other Games Grid */}
-        {/* <div className="mt-12">
+        <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
             More Games to Explore
           </h2>
           <GameGrid games={otherGames} />
-        </div> */}
+        </div>
       </section>
     </main>
   );
